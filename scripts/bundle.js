@@ -31749,7 +31749,7 @@ module.exports = React.createClass({
 		e.preventDefault();
 		var age = document.getElementById('age').value;
 		var resultDiv = document.getElementById('response');
-		var result = +age > 16 ? 'Grats you can drive' : 'Sorry youngun';
+		var result = +age >= 16 ? 'Grats you can drive' : 'Sorry youngun';
 		console.log(result, +age);
 		resultDiv.innerHTML = result;
 	}
